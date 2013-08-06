@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title> MyFaceBook</title> 
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <link rel="StyleSheet" href="estilos.css" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+</head>
+<script>
+var contador=0;
+opacidad=parseFloat(Imagen.style.opacity);
+
+function movement(){
+var VCapa=document.getElementById('Capa');
+VCapa.style.top=parseInt(VCapa.style.top)+1;
+contador++;
+if(contador<100)
+setTimeout("movement()",10);
+}
+
+</script>
+<body  onload="movement()">
+  <div id="header">
+    <h1> facebootijo </h1> 
+  </div>
+<div id="Capa" style="position:absolute; width:10%; height:600px; border:0px;
+		      top: -40px;margin:0px;">
+ <h2>Bienvenid@ a </h2>
+</div>
+</div>  
+</body>
+</html>
